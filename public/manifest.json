@@ -1,25 +1,56 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }	    
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+	"name": "YouTube Vanced",
+	"short_name": "YouTube Vanced",
+	"icons": [
+		{
+			"src": "/favicon/android-chrome-36x36.png?v=3",
+			"sizes": "36x36",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-48x48.png?v=3",
+			"sizes": "48x48",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-72x72.png?v=3",
+			"sizes": "72x72",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-96x96.png?v=3",
+			"sizes": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-144x144.png?v=3",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-192x192.png?v=3",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-256x256.png?v=3",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-384x384.png?v=3",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon/android-chrome-512x512.png?v=3",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#0c0c0f",
+	"background_color": "#0c0c0f",
+	"start_url": "https://www.vanced.app",
+	"display": "standalone",
+	"orientation": "portrait"
 }

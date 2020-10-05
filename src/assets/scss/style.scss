@@ -5,10 +5,8 @@
 /*--------------------------------------------------------------
 # Variables, functions and mixins
 --------------------------------------------------------------*/
-@import "core/abstracts/functions",
-		"settings/settings",
-        "core/abstracts/mixins",
-        'core/abstracts/include-media';
+@import "core/abstracts/functions", "settings/settings", "core/abstracts/mixins",
+	"core/abstracts/include-media";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -126,3 +124,28 @@
 # Helpers
 --------------------------------------------------------------*/
 @import "core/base/helpers";
+
+.vanced--gradient {
+	background: rgb(46, 115, 255);
+	background-image: linear-gradient(
+		45deg,
+		rgba(46, 115, 255, 1) 20%,
+		rgba(255, 0, 50, 1) 52%,
+		rgba(12, 12, 15, 1) 95%
+	);
+	background-size: 100%;
+	background-clip: text;
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.features--image--container {
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
