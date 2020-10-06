@@ -18,7 +18,7 @@ const FooterNav = ({ className, ...props }) => {
 					<a href={vancedManagerAPKUrl}>Download</a>
 				</li>
 				<li>
-					<Link to="https://brave.com/?ref=van874">Support Us</Link>
+	      				<a href="https://brave.com/?ref=van87">Support Us</a>
 				</li>
 			</ul>
 		</nav>
