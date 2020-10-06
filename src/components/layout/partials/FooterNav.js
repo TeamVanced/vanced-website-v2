@@ -12,13 +12,13 @@ const FooterNav = ({ className, ...props }) => {
 		<nav {...props} className={classes}>
 			<ul className="list-reset">
 				<li>
-					<Link to="/changelog">Changelog</Link>
+					<Link to="/changelogs">Changelog</Link>
 				</li>
 				<li>
 					<a href={vancedManagerAPKUrl}>Download</a>
 				</li>
 				<li>
-					<Link to="https://brave.com/?ref=van874">Support</Link>
+					<Link to="https://brave.com/?ref=van874">Support Us</Link>
 				</li>
 			</ul>
 		</nav>
