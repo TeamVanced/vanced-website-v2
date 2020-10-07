@@ -45,7 +45,7 @@ const App = () => {
 
 	useEffect(() => {
 		fetch(
-			"https://cors-anywhere.herokuapp.com/https://vanced.app/api/v1/latest.json",
+			"https://vancedapp.com/api/v1/latest.json",
 		)
 			.then(res => res.json())
 			.then(data => setChangeLogs(data));
