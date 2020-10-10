@@ -3,7 +3,7 @@ import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 // import ReactGA from "react-ga";
-import TagManager from 'react-gtm-module'
+import TagManager from "react-gtm-module";
 
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault";
@@ -22,10 +22,10 @@ import Features from "./views/Features";
 // };
 
 const tagManagerArgs = {
-    gtmId: 'GTM-MXQ4LWV'
+	gtmId: "GTM-MXQ4LWV",
 };
 
-TagManager.initialize(tagManagerArgs)
+TagManager.initialize(tagManagerArgs);
 
 export const ChangeLogContext = React.createContext();
 
@@ -34,7 +34,7 @@ const App = () => {
 	let location = useLocation();
 
 	useEffect(() => {
-		const page = location.pathname;
+		// const page = location.pathname;
 		document.body.classList.add("is-loaded");
 		childRef.current.init();
 		//trackPage(page);
@@ -44,9 +44,7 @@ const App = () => {
 	const [changeLogs, setChangeLogs] = React.useState({});
 
 	useEffect(() => {
-		fetch(
-			"https://vancedapp.com/api/v1/latest.json",
-		)
+		fetch("https://vancedapp.com/api/v1/latest.json")
 			.then(res => res.json())
 			.then(data => setChangeLogs(data));
 	}, []);
