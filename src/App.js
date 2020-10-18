@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState, createContext } from "react";
 import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 // import ReactGA from "react-ga";
-import TagManager from 'react-gtm-module'
+import TagManager from "react-gtm-module";
 
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault";
@@ -22,58 +22,67 @@ import Features from "./views/Features";
 // };
 
 const tagManagerArgs = {
-    gtmId: 'GTM-MXQ4LWV'
+	gtmId: "GTM-MXQ4LWV",
 };
 
-TagManager.initialize(tagManagerArgs)
+TagManager.initialize(tagManagerArgs);
 
-export const ChangeLogContext = React.createContext();
+export const ChangeLogContext = createContext();
+export const ShowBraveContext = createContext();
+
+// Change this to show BRAVE across website
+export const showBrave = false;
 
 const App = () => {
 	const childRef = useRef();
 	let location = useLocation();
 
 	useEffect(() => {
-		const page = location.pathname;
+		// const page = location.pathname;
 		document.body.classList.add("is-loaded");
 		childRef.current.init();
 		//trackPage(page);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [location]);
 
-	const [changeLogs, setChangeLogs] = React.useState({});
+	const [changeLogs, setChangeLogs] = useState({});
 
 	useEffect(() => {
-		fetch(
-			"https://vancedapp.com/api/v1/latest.json",
-		)
+		fetch("https://vancedapp.com/api/v1/latest.json")
 			.then(res => res.json())
 			.then(data => setChangeLogs(data));
 	}, []);
 
 	return (
-		<ChangeLogContext.Provider value={changeLogs}>
-			<ScrollReveal
-				ref={childRef}
-				children={() => (
-					<Switch>
-						<AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-						<AppRoute
-							exact
-							path="/changelogs"
-							component={ChangeLog}
-							layout={LayoutDefault}
-						/>
-						<AppRoute
-							exact
-							path="/features"
-							component={Features}
-							layout={LayoutDefault}
-						/>
-					</Switch>
-				)}
-			/>
-		</ChangeLogContext.Provider>
+		<ShowBraveContext.Provider value={showBrave}>
+			<ChangeLogContext.Provider value={changeLogs}>
+				<ScrollReveal
+					ref={childRef}
+					children={() => (
+						<Switch>
+							<AppRoute
+								exact
+								path="/"
+								component={Home}
+								layout={LayoutDefault}
+							/>
+							<AppRoute
+								exact
+								path="/changelogs"
+								component={ChangeLog}
+								layout={LayoutDefault}
+							/>
+							<AppRoute
+								exact
+								path="/features"
+								component={Features}
+								layout={LayoutDefault}
+							/>
+						</Switch>
+					)}
+				/>
+			</ChangeLogContext.Provider>
+		</ShowBraveContext.Provider>
 	);
 };
 

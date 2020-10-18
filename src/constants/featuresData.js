@@ -1,3 +1,5 @@
+import React from "react";
+
 // Feature Images
 import mainFeature1 from "../assets/images/vanced_features/main_features_1.jpg";
 import mainFeature2 from "../assets/images/vanced_features/main_features_2.jpg";
@@ -25,7 +27,6 @@ const featuresData = [
 			"Allows you to override Codec options such as forcing H264 for old devices or VP9, this also allows you to force HDR playback or turn off 60fps if you prefer a cinematic experience. (Custom device configs for these features can be found on our discord or XDA)",
 			"Force the default video resolution as high or low as you want and even override your screen resolution for that sharp 4k playback on any device, and also allows you to change default playback speed to anywhere between 0.25x to 2x (assuming your device is powerful enough)",
 			"Allows you to toggle home ads, most UI ads, Merchandise ads, Community posts, Movie upselling, compact banner info (such as the covid info), remove comments entirely, compact movie, movie shelf removal and many more!",
-			// "Youtube Stories, end screens, info cards, video watermarks, the cast button, wide search bar and HDR max brightness can also be configured.",
 		],
 	},
 	{
@@ -34,7 +35,10 @@ const featuresData = [
 		data: [
 			"Features the ability to skip annoying sponsor segments (where a youtuber advertises a service or product in the middle of a video)",
 			"It also supports skipping other categories, such as intros, outros and reminders to subscribe.",
-			"Uses the API found at https://sponsor.ajay.app/ where you can find more information on how it works",
+			<>
+				Uses the API found <a href="https://sponsor.ajay.app/">here</a>. You can
+				find more information on how it works
+			</>,
 			"Also allows you to submit your own segments to the API and contribute to the wider community",
 			"Complete control over whether to automatically skip a segment category or show a button for skipping, or simply just not skipping it at all.",
 			"Highlights the segment in the specific colour based on its category in the playback timeline.",

@@ -7,7 +7,10 @@ import Button from "../elements/Button";
 // import Modal from "../elements/Modal";
 import getRandomQuotes from "../../utils/getRandomQuotes";
 import Image from "../elements/Image";
-import { ChangeLogContext } from "../../App";
+import { ChangeLogContext, ShowBraveContext } from "../../App";
+
+import { SiBrave, SiAdguard } from "react-icons/si";
+import { ADGUARD, BRAVE } from "../../constants/links";
 
 const propTypes = {
 	...SectionProps.types,
@@ -55,6 +58,7 @@ const Hero = ({
 	);
 
 	const vancedManager = useContext(ChangeLogContext)?.manager;
+	const showBrave = useContext(ShowBraveContext);
 
 	return (
 		<section {...props} className={outerClasses}>
@@ -89,14 +93,25 @@ const Hero = ({
 											width={64}
 										/>
 									</Button>
+									{showBrave && (
+										<Button
+											tag="a"
+											color="dark"
+											wideMobile
+											href={BRAVE}
+											target="_blank"
+										>
+											Support us <SiBrave size="2em" color="white" />
+										</Button>
+									)}
 									<Button
 										tag="a"
 										color="dark"
 										wideMobile
-										href="https://brave.com/?ref=van874"
+										href={ADGUARD}
 										target="_blank"
 									>
-										Support us
+										Support us <SiAdguard size="2em" color="white" />
 									</Button>
 								</ButtonGroup>
 							</div>

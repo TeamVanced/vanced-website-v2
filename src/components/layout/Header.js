@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 import { ChangeLogContext } from "../../App";
+import { Link as LinkScroll } from "react-scroll";
 
 const propTypes = {
 	navPosition: PropTypes.string,
@@ -127,9 +128,21 @@ const Header = ({
 											</Link>
 										</li>
 										<li title="Latest Vanced version">
-											<Link to="/features" onClick={closeMenu}>
+											{/* <Link to="#features" onClick={closeMenu}>
 												Features
-											</Link>
+											</Link> */}
+
+											<LinkScroll
+												activeClass="active"
+												to="features"
+												spy={true}
+												smooth={true}
+												offset={-70}
+												duration={500}
+												style={{ cursor: "pointer" }}
+											>
+												Features
+											</LinkScroll>
 										</li>
 									</ul>
 									<ul className="list-reset header-nav-right">

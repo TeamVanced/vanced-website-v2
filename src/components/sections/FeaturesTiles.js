@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 // import SectionHeader from "./partials/SectionHeader";
 // import Image from "../elements/Image";
 
+import { ShowBraveContext } from "../../App";
+
 import { FaYoutube, FaMusic } from "react-icons/fa";
-import { SiBrave } from "react-icons/si";
+import { SiBrave, SiAdguard } from "react-icons/si";
+import { ADGUARD, BRAVE } from "../../constants/links";
 
 const propTypes = {
 	...SectionTilesProps.types,
@@ -25,6 +28,8 @@ const FeaturesTiles = ({
 	pushLeft,
 	...props
 }) => {
+	const showBrave = useContext(ShowBraveContext);
+
 	const outerClasses = classNames(
 		"features-tiles section",
 		topOuterDivider && "has-top-divider",
@@ -126,6 +131,44 @@ const FeaturesTiles = ({
 							</div>
 						</div>
 
+						{showBrave && (
+							<div
+								className="tiles-item reveal-from-bottom"
+								data-reveal-delay="1100"
+							>
+								<div className="tiles-item-inner">
+									<div className="features-tiles-item-header">
+										<div
+											className="features-tiles-item-image mb-16"
+											style={{
+												height: "64px",
+												width: "64px",
+											}}
+										>
+											{/* <Image
+											src={require("./../../assets/images/feature-tile-icon-03.svg")}
+											alt="Features tile icon 03"
+											width={64}
+											height={64}
+										/> */}
+											<SiBrave size="2em" color="white" />
+										</div>
+									</div>
+									<div className="features-tiles-item-content">
+										<h4 className="mt-0 mb-8">Try brave!</h4>
+										<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
+											<a href={BRAVE} target="_blank" rel="noopener noreferrer">
+												Brave
+											</a>{" "}
+											is available as a fast, free, secure web browser for your
+											mobile devices. Complete with a built-in adblocker that
+											prevents tracking and provides security protection with
+											optimized data and battery performance.
+										</p>
+									</div>
+								</div>
+							</div>
+						)}
 						<div
 							className="tiles-item reveal-from-bottom"
 							data-reveal-delay="1100"
@@ -139,29 +182,19 @@ const FeaturesTiles = ({
 											width: "64px",
 										}}
 									>
-										{/* <Image
-											src={require("./../../assets/images/feature-tile-icon-03.svg")}
-											alt="Features tile icon 03"
-											width={64}
-											height={64}
-										/> */}
-										<SiBrave size="2em" color="white" />
+										<SiAdguard size="2em" color="white" />
 									</div>
 								</div>
 								<div className="features-tiles-item-content">
-									<h4 className="mt-0 mb-8">Try brave!</h4>
+									<h4 className="mt-0 mb-8">Try Adguard!</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										<a
-											href="https://brave.com/?ref=van874"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											Brave
+										<a href={ADGUARD} target="_blank" rel="noopener noreferrer">
+											AdGuard
 										</a>{" "}
-										is available as a fast, free, secure web browser for your
-										mobile devices. Complete with a built-in adblocker that
-										prevents tracking and provides security protection with
-										optimized data and battery performance.
+										is the best way to get rid of intrusive ads and online
+										tracking, and to protect your computer from malware. Make
+										your web surfing faster, safer and more comfortable with
+										AdGuard!
 									</p>
 								</div>
 							</div>
