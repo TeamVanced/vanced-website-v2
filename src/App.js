@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState, createContext } from "react";
 import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
@@ -27,7 +27,11 @@ const tagManagerArgs = {
 
 TagManager.initialize(tagManagerArgs);
 
-export const ChangeLogContext = React.createContext();
+export const ChangeLogContext = createContext();
+export const ShowBraveContext = createContext();
+
+// Change this to show BRAVE across website
+export const showBrave = false;
 
 const App = () => {
 	const childRef = useRef();
@@ -41,7 +45,7 @@ const App = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [location]);
 
-	const [changeLogs, setChangeLogs] = React.useState({});
+	const [changeLogs, setChangeLogs] = useState({});
 
 	useEffect(() => {
 		fetch("https://vancedapp.com/api/v1/latest.json")
@@ -50,28 +54,35 @@ const App = () => {
 	}, []);
 
 	return (
-		<ChangeLogContext.Provider value={changeLogs}>
-			<ScrollReveal
-				ref={childRef}
-				children={() => (
-					<Switch>
-						<AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-						<AppRoute
-							exact
-							path="/changelogs"
-							component={ChangeLog}
-							layout={LayoutDefault}
-						/>
-						<AppRoute
-							exact
-							path="/features"
-							component={Features}
-							layout={LayoutDefault}
-						/>
-					</Switch>
-				)}
-			/>
-		</ChangeLogContext.Provider>
+		<ShowBraveContext.Provider value={showBrave}>
+			<ChangeLogContext.Provider value={changeLogs}>
+				<ScrollReveal
+					ref={childRef}
+					children={() => (
+						<Switch>
+							<AppRoute
+								exact
+								path="/"
+								component={Home}
+								layout={LayoutDefault}
+							/>
+							<AppRoute
+								exact
+								path="/changelogs"
+								component={ChangeLog}
+								layout={LayoutDefault}
+							/>
+							<AppRoute
+								exact
+								path="/features"
+								component={Features}
+								layout={LayoutDefault}
+							/>
+						</Switch>
+					)}
+				/>
+			</ChangeLogContext.Provider>
+		</ShowBraveContext.Provider>
 	);
 };
 

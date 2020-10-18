@@ -4,7 +4,8 @@ const quotesArray = [
 	"Blocking ads is better than blocking me",
 	"Advanced but without the ads",
 	"Just read the instructions!",
-	"Download Brave to support us",
+	// "Download Brave to support us",
+	"Download Adguard to support us",
 	"Vanced doesn't include video downloading",
 ];
 
