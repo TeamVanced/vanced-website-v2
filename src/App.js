@@ -31,7 +31,7 @@ export const ChangeLogContext = createContext();
 export const ShowBraveContext = createContext();
 
 // Change this to show BRAVE across website
-export const showBrave = false;
+export const showBrave = true;
 
 const App = () => {
 	const childRef = useRef();
