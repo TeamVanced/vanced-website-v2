@@ -48,7 +48,7 @@ const App = () => {
 	const [changeLogs, setChangeLogs] = useState({});
 
 	useEffect(() => {
-		fetch("https://vancedapp.com/api/v1/latest.json")
+		fetch(process.env.REACT_APP_VANCED_LATEST_API_URL)
 			.then(res => res.json())
 			.then(data => setChangeLogs(data));
 	}, []);

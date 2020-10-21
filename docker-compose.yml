@@ -1,0 +1,6 @@
+version: '3'
+services:
+  backend:
+    image: vanced/website-v2:local
+    ports:
+      - "4001:4001"
