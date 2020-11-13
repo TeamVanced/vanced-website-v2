@@ -28,7 +28,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: vanced/website-v2:dev-${{ env.RELEASE_VERSION }}
+          tags: vanced/website-v2:dev-${{ env.RELEASE_VERSION }},vanced/website-v2:dev-latest
+          build-args: |
+            REACT_APP_VANCED_LATEST_API_URL=${{ secrets.REACT_APP_VANCED_LATEST_API_URL_DEV }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Pull and update a new version
