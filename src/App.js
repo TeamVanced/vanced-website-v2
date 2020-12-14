@@ -25,8 +25,6 @@ const tagManagerArgs = {
 	gtmId: "GTM-MXQ4LWV",
 };
 
-TagManager.initialize(tagManagerArgs);
-
 export const ChangeLogContext = createContext();
 export const ShowBraveContext = createContext();
 
@@ -86,4 +84,5 @@ const App = () => {
 	);
 };
 
+TagManager.initialize(tagManagerArgs);
 export default App;
