@@ -1,12 +1,12 @@
 import React from "react";
 
 // Feature Images
-import mainFeature1 from "../assets/images/vanced_features/main_features_1.jpg";
-import mainFeature2 from "../assets/images/vanced_features/main_features_2.jpg";
-import customization1 from "../assets/images/vanced_features/customization_1.jpg";
-import customization2 from "../assets/images/vanced_features/customization_2.jpg";
-import sponsorBlock1 from "../assets/images/vanced_features/sponsor_block_1.jpg";
-import sponsorBlock2 from "../assets/images/vanced_features/sponsor_block_2.jpg";
+import mainFeature1 from "../assets/images/vanced_features/main_features_1.webp";
+import mainFeature2 from "../assets/images/vanced_features/main_features_2.webp";
+import customization1 from "../assets/images/vanced_features/customization_1.webp";
+import customization2 from "../assets/images/vanced_features/customization_2.webp";
+import sponsorBlock1 from "../assets/images/vanced_features/sponsor_block_1.webp";
+import sponsorBlock2 from "../assets/images/vanced_features/sponsor_block_2.webp";
 
 const featuresData = [
 	{
