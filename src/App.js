@@ -2,12 +2,10 @@ import React, { useRef, useEffect, useState, createContext } from "react";
 import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
-// import ReactGA from "react-ga";
-import TagManager from "react-gtm-module";
 
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault";
-
+import TagManager from "react-gtm-module";
 // Views
 import Home from "./views/Home";
 import ChangeLog from "./views/ChangeLog";
@@ -24,8 +22,6 @@ import Features from "./views/Features";
 const tagManagerArgs = {
 	gtmId: "GTM-MXQ4LWV",
 };
-
-TagManager.initialize(tagManagerArgs);
 
 export const ChangeLogContext = createContext();
 export const ShowBraveContext = createContext();
@@ -86,4 +82,5 @@ const App = () => {
 	);
 };
 
+TagManager.initialize(tagManagerArgs);
 export default App;

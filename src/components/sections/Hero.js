@@ -7,6 +7,7 @@ import Button from "../elements/Button";
 // import Modal from "../elements/Modal";
 import getRandomQuotes from "../../utils/getRandomQuotes";
 import Image from "../elements/Image";
+import DownloadImg from "./../../assets/images/download.svg";
 import { ChangeLogContext, ShowBraveContext } from "../../App";
 
 import { SiBrave, SiAdguard } from "react-icons/si";
@@ -88,7 +89,7 @@ const Hero = ({
 									>
 										Vanced Manager (v{vancedManager?.version})
 										<Image
-											src={require("./../../assets/images/download.svg")}
+											src={DownloadImg}
 											alt="Features tile icon 01"
 											width={64}
 										/>

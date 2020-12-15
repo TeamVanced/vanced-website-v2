@@ -1,4 +1,4 @@
-FROM node:14.13.0-alpine3.12
+FROM node:14-alpine
 LABEL maintainer="teamvanced@gmail.com"
 
 COPY package.json /src/package.json
