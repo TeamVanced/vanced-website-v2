@@ -1,16 +1,16 @@
-import React, { useRef, useEffect, useState, createContext, lazy, Suspense } from "react";
+import React, { useRef, useEffect, useState, createContext } from "react";
 import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 
 // Layouts
 import LayoutDefault from "./layouts/LayoutDefault";
-
+import TagManager from "react-gtm-module";
 // Views
-const Home = lazy(() => import("./views/Home"));
-const ChangeLog = lazy(() => import("./views/ChangeLog"));
-const Features = lazy(() => import("./views/Features"));
-const renderLoader = () => <p>Loading</p>;
+import Home from "./views/Home";
+import ChangeLog from "./views/ChangeLog";
+import Features from "./views/Features";
+
 // Initialize Google Analytics
 // ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -22,7 +22,6 @@ const renderLoader = () => <p>Loading</p>;
 const tagManagerArgs = {
 	gtmId: "GTM-MXQ4LWV",
 };
-const TagManager = lazy(() => import("react-gtm-module"));
 
 export const ChangeLogContext = createContext();
 export const ShowBraveContext = createContext();
@@ -57,30 +56,24 @@ const App = () => {
 					ref={childRef}
 					children={() => (
 						<Switch>
-							<Suspense fallback={renderLoader()}>
 							<AppRoute
 								exact
 								path="/"
 								component={Home}
 								layout={LayoutDefault}
 							/>
-							</Suspense>
-							<Suspense fallback={renderLoader()}>
 							<AppRoute
 								exact
 								path="/changelogs"
 								component={ChangeLog}
 								layout={LayoutDefault}
 							/>
-							</Suspense>
-							<Suspense fallback={renderLoader()}>
 							<AppRoute
 								exact
 								path="/features"
 								component={Features}
 								layout={LayoutDefault}
 							/>
-							</Suspense>
 						</Switch>
 					)}
 				/>

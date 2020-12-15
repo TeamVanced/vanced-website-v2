@@ -1,0 +1,1 @@
+export { SectionSplitProps as default } from "./SectionProps";
