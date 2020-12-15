@@ -50,7 +50,7 @@
     ],
     "theme_color": "#0c0c0f",
     "background_color": "#0c0c0f",
-    "start_url": "https://www.vanced.app",
+    "start_url": "https://vancedapp.com",
     "display": "standalone",
     "orientation": "portrait"
 }
