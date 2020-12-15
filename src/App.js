@@ -8,7 +8,7 @@ import LayoutDefault from "./layouts/LayoutDefault";
 
 // Views
 const Home = lazy(() => import("./views/Home"));
-const ChangeLog = lazy(() => import("./views/Changelog"));
+const ChangeLog = lazy(() => import("./views/ChangeLog"));
 const Features = lazy(() => import("./views/Features"));
 const renderLoader = () => <p>Loading</p>;
 // Initialize Google Analytics
