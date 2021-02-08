@@ -20,6 +20,15 @@ const FooterNav = ({ className, ...props }) => {
 				<li>
 					<a href={vancedManagerAPKUrl}>Download</a>
 				</li>
+				<li>
+					<a
+						href="https://play.google.com/store/apps/details?id=com.vanced.faq"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Need help?
+					</a>
+				</li>
 				{showBrave && (
 					<li>
 						<a href={BRAVE} target="_blank" rel="noopener noreferrer">

@@ -144,6 +144,15 @@ const Header = ({
 												Features
 											</LinkScroll>
 										</li>
+										<li title="Latest Vanced version">
+											<a
+												href="https://play.google.com/store/apps/details?id=com.vanced.faq"
+												target="_blank"
+												rel="noreferrer"
+											>
+												Need help?
+											</a>
+										</li>
 									</ul>
 									<ul className="list-reset header-nav-right">
 										<li>
