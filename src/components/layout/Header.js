@@ -123,14 +123,7 @@ const Header = ({
 											</Link>
 										</li>
 										<li title="Features">
-											{/* <Link to="#features" onClick={closeMenu}>
-												Features
-											</Link> */}
-
-											<Link to="features" onClick={closeMenu}>
-												Features
-											</Link>
-											
+											<a href="/#features">Features</a>
 										</li>
 										<li title="Vanced Guide">
 											<a
