@@ -122,7 +122,7 @@ const Header = ({
 												Vanced v{ytVanced?.version}
 											</Link>
 										</li>
-										<li title="Latest Vanced version">
+										<li title="Latest Music version">
 											<Link to="/changelogs" onClick={closeMenu}>
 												Music v{musicVanced?.version}
 											</Link>
