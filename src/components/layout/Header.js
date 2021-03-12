@@ -127,7 +127,7 @@ const Header = ({
 												Music v{musicVanced?.version}
 											</Link>
 										</li>
-										<li title="Latest Vanced version">
+										<li title="Features">
 											{/* <Link to="#features" onClick={closeMenu}>
 												Features
 											</Link> */}
@@ -140,11 +140,12 @@ const Header = ({
 												offset={-70}
 												duration={500}
 												style={{ cursor: "pointer" }}
+												onClick={closeMenu}
 											>
 												Features
 											</LinkScroll>
 										</li>
-										<li title="Latest Vanced version">
+										<li title="Vanced Guide">
 											<a
 												href="https://play.google.com/store/apps/details?id=com.vanced.faq"
 												target="_blank"
