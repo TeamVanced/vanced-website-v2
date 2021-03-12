@@ -117,14 +117,9 @@ const Header = ({
 											navPosition && `header-nav-${navPosition}`,
 										)}
 									>
-										<li title="Latest Vanced version">
-											<Link to="/changelogs" onClick={closeMenu}>
-												Vanced v{ytVanced?.version}
-											</Link>
-										</li>
-										<li title="Latest Music version">
-											<Link to="/changelogs" onClick={closeMenu}>
-												Music v{musicVanced?.version}
+										<li title="Changelogs" onClick={closeMenu}>
+											<Link to="/changelogs">
+												Changelogs
 											</Link>
 										</li>
 										<li title="Features">
@@ -132,20 +127,9 @@ const Header = ({
 												Features
 											</Link> */}
 
-											<LinkScroll
-												activeClass="active"
-												to="features"
-												spy={true}
-												smooth={true}
-												offset={-70}
-												duration={500}
-												style={{ cursor: "pointer" }}
-											>
-												<Link to="/">
-													Features
-												</Link>
-											</LinkScroll>
-											
+											<Link to="features" onClick={closeMenu}>
+												Features
+											</Link>
 											
 										</li>
 										<li title="Vanced Guide">
