@@ -140,10 +140,13 @@ const Header = ({
 												offset={-70}
 												duration={500}
 												style={{ cursor: "pointer" }}
-												onClick={closeMenu}
 											>
-												Features
+												<Link to="/">
+													Features
+												</Link>
 											</LinkScroll>
+											
+											
 										</li>
 										<li title="Vanced Guide">
 											<a
