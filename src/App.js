@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, createContext } from "react";
-import { useLocation, Switch, Route } from "react-router-dom";
+import { useLocation, Switch } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 
@@ -32,21 +32,6 @@ export const showBrave = true;
 const App = () => {
 	const childRef = useRef();
 	let location = useLocation();
-
-	<React.Fragment>
-	<Route path='/discord' component={() => { 
-		window.location.href = 'https://discord.gg/K9KKDqd'; 
-		return null;
-   }}/>
-   <Route path='/adguard' component={() => { 
-	window.location.href = 'https://adguard.com/?aid=31141'; 
-	return null;
-	}}/>
-	   <Route path='/brave' component={() => { 
-	window.location.href = 'https://brave.com/cge651'; 
-	return null;
-	}}/>
-	</React.Fragment>
 
 	useEffect(() => {
 		// const page = location.pathname;
