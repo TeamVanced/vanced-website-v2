@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import App from './App';
@@ -13,6 +13,18 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
+	<Route path='/discord' component={() => { 
+		window.location.href = 'https://discord.gg/K9KKDqd'; 
+		return null;
+   }}/>
+   <Route path='/adguard' component={() => { 
+	window.location.href = 'https://adguard.com/?aid=31141'; 
+	return null;
+	}}/>
+	   <Route path='/brave' component={() => { 
+	window.location.href = 'https://brave.com/cge651'; 
+	return null;
+	}}/>
     <App />
   </Router>,
   document.getElementById('root')
