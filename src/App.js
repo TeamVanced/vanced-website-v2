@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, createContext } from "react";
-import { useLocation, Switch } from "react-router-dom";
+import { useLocation, Switch, Route } from "react-router-dom";
 import AppRoute from "./utils/AppRoute";
 import ScrollReveal from "./utils/ScrollReveal";
 
