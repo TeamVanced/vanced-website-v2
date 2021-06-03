@@ -17,6 +17,10 @@ ReactDOM.render(
 	window.location.href = 'https://discord.gg/K9KKDqd'; 
 	return null;
    }}/>
+   <Route path='/twitter' component={() => { 
+	window.location.href = 'https://twitter.com/YTVanced'; 
+	return null;
+	}}/>
    <Route path='/adguard' component={() => { 
 	window.location.href = 'https://adguard.com/?aid=31141'; 
 	return null;
