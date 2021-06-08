@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import './assets/scss/style.scss';
 
 const history = createBrowserHistory();
+const linkToUse = Math.random() < 0.5;
 
 ReactDOM.render(
   <Router history={history}>
@@ -24,11 +25,15 @@ ReactDOM.render(
    <Route path='/adguard' component={() => { 
 	window.location.href = 'https://adguard.com/?aid=31141'; 
 	return null;
-   }}/>
-   <Route path='/brave' component={() => { 
-	window.location.href = 'https://brave.com/cge651'; 
+	}}/>
+    <Route path='/brave' component={() => { 
+        if (linkToUse) {
+		window.location.href = 'https://brave.com/cge651'; 
+        } else {
+		window.location.href = 'https://brave.com/raz074';
+	}
 	return null;
-   }}/>
+    }}/>
     <App />
   </Router>,
   document.getElementById('root')
