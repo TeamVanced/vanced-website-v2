@@ -39,7 +39,8 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
 						<FooterNav />
 						<div className="footer-copyright">
 							Website designed by{" "}
-							<a href="https://twitter.com/vikrantbhat1022">Vikrant Bhat</a>.
+							<a href="https://twitter.com/vikrantbhat1022">Vikrant Bhat</a>.<br />
+							YouTube is a trademark of Google LLC.<br />Use of this trademark is subject to Google Permissions.
 						</div>
 					</div>
 				</div>

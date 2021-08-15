@@ -88,9 +88,9 @@ const FeaturesTiles = ({
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Install Vanced</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										YouTube Vanced is the stock Android YouTube app, but better!
+										YouTube™ Vanced is the stock Android YouTube™ app, but better!
 										Includes adblocking, true amoled dark mode and a lot more.
-										Use the handy Vanced Manager to install YouTube Vanced with
+										Use the handy Vanced Manager to install YouTube™ Vanced with
 										ease.
 									</p>
 								</div>
@@ -122,10 +122,10 @@ const FeaturesTiles = ({
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Music</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced, but for Youtube Music! This is relatively less
+										Vanced, but for YouTube™ Music! This is relatively less
 										feature rich compared to vanced but still features many
 										things you come to expect like adblocking and background
-										playback all inside Youtube Music!
+										playback all inside YouTube™ Music!
 									</p>
 								</div>
 							</div>

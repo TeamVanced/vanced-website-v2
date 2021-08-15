@@ -42,8 +42,8 @@ const ChangeLogs = ({
 	const changeLogsLoopData = [
 		{ name: "Vanced Manager", data: changeLogs?.manager },
 		{ name: "MicroG", data: changeLogs?.microg },
-		{ name: "Youtube Music Vanced", data: changeLogs?.music },
-		{ name: "Youtube Vanced", data: changeLogs?.vanced },
+		{ name: "YouTube™ Music Vanced", data: changeLogs?.music },
+		{ name: "YouTube™ Vanced", data: changeLogs?.vanced },
 	];
 
 	return (
