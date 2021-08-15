@@ -1,6 +1,6 @@
 import React, {lazy, Suspense} from "react";
 // import sections
-import Hero from "../components/sections/Hero";
+import Hero from "../components/sections/HeroPc";
 
 const Home = () => {
 	return (
