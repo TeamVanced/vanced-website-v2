@@ -70,7 +70,7 @@ const Hero = ({
 							className="mt-0 mb-16 reveal-from-bottom"
 							data-reveal-delay="200"
 						>
-							Vanced <span className="vanced--gradient">Experience for PC</span>
+							<span className="vanced--gradient">Vanced</span> Experience for PC
 						</h1>
 						<div className="container-xs">
 							<p
