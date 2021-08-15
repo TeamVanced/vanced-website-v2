@@ -70,14 +70,14 @@ const Hero = ({
 							className="mt-0 mb-16 reveal-from-bottom"
 							data-reveal-delay="200"
 						>
-							YouTube™ <span className="vanced--gradient">Vanced</span>
+							Vanced <span className="vanced--gradient">Experience for PC</span>
 						</h1>
 						<div className="container-xs">
 							<p
 								className="m-0 mb-32 reveal-from-bottom"
 								data-reveal-delay="400"
 							>
-								{getRandomQuotes()}
+								Install the links below for the complete experience:
 							</p>
 							<div className="reveal-from-bottom mb-8" data-reveal-delay="600">
 								<ButtonGroup>
@@ -85,47 +85,42 @@ const Hero = ({
 										tag="a"
 										color="primary"
 										wideMobile
-										href={vancedManager?.url}
+										href={BRAVE}
 									>
-										Vanced Manager (v{vancedManager?.version})
-										<Image
-											src={DownloadImg}
-											alt="Features tile icon 01"
-											width={64}
-										/>
+										1. Brave <SiBrave size="2em" color="white" />
 									</Button>
 									{showBrave && (
 										<Button
 											tag="a"
 											color="dark"
 											wideMobile
-											href={BRAVE}
+											href="https://chrome.google.com/webstore/detail/sponsorblock-for-YouTube™/mnjggcdmjocbbbhaepdhchncahnbgone"
 											target="_blank"
 										>
-											Support us <SiBrave size="2em" color="white" />
+											2. SponsorBlock 
+											<Image
+											src={DownloadImg}
+											alt="Features tile icon 01"
+											width={64}
+										/>
 										</Button>
 									)}
 									<Button
 										tag="a"
 										color="dark"
 										wideMobile
-										href={ADGUARD}
+										href="https://chrome.google.com/webstore/detail/enhancer-for-YouTube™/ponfpcnoihfmfllpaingbgckeeldkhle"
 										target="_blank"
 									>
-										Support us <SiAdguard size="2em" color="white" />
+										3. Enchancer for YouTube™
+										<Image
+											src={DownloadImg}
+											alt="Features tile icon 01"
+											width={64}
+										/>
 									</Button>
 								</ButtonGroup>
 							</div>
-
-							<p
-								className=" m-0 mb-32 reveal-from-bottom text-xs"
-								data-reveal-delay="400"
-							>
-								Looking for{" "}
-								<a href="https://www.mediafire.com/folder/773e97cz2ezx1/AddFree_Youtube_BackgroundPlay_Enabled">
-									<i>older versions?</i>
-								</a>
-							</p>
 						</div>
 					</div>
 					{/* <div

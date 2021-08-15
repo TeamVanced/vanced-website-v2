@@ -22,10 +22,6 @@ ReactDOM.render(
 	window.location.href = 'https://twitter.com/YTVanced'; 
 	return null;
 	}}/>
-	<Route path='/pc' component={() => { 
-	window.location.href = 'https://linkmix.co/5889345'; 
-	return null;
-	}}/>
    <Route path='/adguard' component={() => { 
 	window.location.href = 'https://adguard.com/?aid=31141'; 
 	return null;

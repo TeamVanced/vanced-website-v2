@@ -9,6 +9,7 @@ import TagManager from "react-gtm-module";
 // Views
 import Home from "./views/Home";
 import ChangeLog from "./views/ChangeLog";
+import PC from "./views/PC";
 import Features from "./views/Features";
 
 // Initialize Google Analytics
@@ -66,6 +67,12 @@ const App = () => {
 								exact
 								path="/changelogs"
 								component={ChangeLog}
+								layout={LayoutDefault}
+							/>
+							<AppRoute
+								exact
+								path="/pc"
+								component={PC}
 								layout={LayoutDefault}
 							/>
 							<AppRoute

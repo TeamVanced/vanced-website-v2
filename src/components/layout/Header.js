@@ -125,14 +125,10 @@ const Header = ({
 										<li title="Features">
 											<a href="/#features">Features</a>
 										</li>
-										<li title="Vanced Guide">
-											<a
-												href="https://play.google.com/store/apps/details?id=com.vanced.faq"
-												target="_blank"
-												rel="noreferrer"
-											>
-												Need help?
-											</a>
+										<li title="Vanced PC" onClick={closeMenu}>
+											<Link to="/pc">
+												PC
+											</Link>
 										</li>
 									</ul>
 									<ul className="list-reset header-nav-right">
