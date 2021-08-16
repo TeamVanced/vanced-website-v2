@@ -87,9 +87,8 @@ const Hero = ({
 										wideMobile
 										href={BRAVE}
 									>
-										1. Brave <SiBrave size="2em" color="white" />
+										1. Brave (referral)<SiBrave size="2em" color="white" />
 									</Button>
-									{showBrave && (
 										<Button
 											tag="a"
 											color="dark"
@@ -104,7 +103,6 @@ const Hero = ({
 											width={64}
 										/>
 										</Button>
-									)}
 									<Button
 										tag="a"
 										color="dark"
@@ -112,7 +110,7 @@ const Hero = ({
 										href="https://chrome.google.com/webstore/detail/enhancer-for-YouTube™/ponfpcnoihfmfllpaingbgckeeldkhle"
 										target="_blank"
 									>
-										3. Enchancer for YouTube™
+										3. Enhancer for YouTube™
 										<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"
