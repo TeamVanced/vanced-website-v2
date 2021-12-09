@@ -130,6 +130,16 @@ const Header = ({
 												PC
 											</Link>
 										</li>
+										<li title="Vanced iOS" onClick={closeMenu}>
+											<Link to="/ios">
+												iOS
+											</Link>
+										</li>
+										<li title="Vanced TV" onClick={closeMenu}>
+											<Link to="/tv">
+												TV
+											</Link>
+										</li>
 									</ul>
 									<ul className="list-reset header-nav-right">
 										<li>
