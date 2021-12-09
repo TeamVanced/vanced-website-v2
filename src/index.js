@@ -26,6 +26,14 @@ ReactDOM.render(
 	window.location.href = 'https://adguard.com/?aid=31141'; 
 	return null;
 	}}/>
+     <Route path='/tv' component={() => { 
+	window.location.href = 'https://smartyoutubetv.github.io/'; 
+	return null;
+	}}/>
+       <Route path='/ios' component={() => { 
+	window.location.href = 'https://github.com/qnblackcat/uYouPlus'; 
+	return null;
+	}}/>
     <Route path='/brave' component={() => { 
         if (linkToUse) {
 		window.location.href = 'https://brave.com/cge651'; 
