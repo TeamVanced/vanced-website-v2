@@ -27,11 +27,11 @@ ReactDOM.render(
 	return null;
 	}}/>
      <Route path='/tv' component={() => { 
-	window.location.href = 'https://smartyoutubetv.github.io/'; 
+	window.location.href = 'https://github.com/yuliskov/SmartTubeNext#readme'; 
 	return null;
 	}}/>
        <Route path='/ios' component={() => { 
-	window.location.href = 'https://github.com/qnblackcat/uYouPlus'; 
+	window.location.href = 'https://github.com/qnblackcat/uYouPlus#readme'; 
 	return null;
 	}}/>
     <Route path='/brave' component={() => { 
