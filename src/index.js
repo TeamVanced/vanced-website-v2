@@ -15,30 +15,30 @@ const linkToUse = Math.random() < 0.5;
 ReactDOM.render(
   <Router history={history}>
    <Route path='/discord' component={() => { 
-	window.location.href = 'https://discord.gg/K9KKDqd'; 
+	window.location.replace('https://discord.gg/K9KKDqd'); 
 	return null;
    }}/>
    <Route path='/twitter' component={() => { 
-	window.location.href = 'https://twitter.com/YTVanced'; 
+	window.location.replace('https://twitter.com/YTVanced'); 
 	return null;
 	}}/>
    <Route path='/adguard' component={() => { 
-	window.location.href = 'https://adguard.com/?aid=31141'; 
+	window.location.replace('https://adguard.com/?aid=31141'); 
 	return null;
 	}}/>
      <Route path='/tv' component={() => { 
-	window.location.href = 'https://smartyoutubetv.github.io/'; 
+	window.location.replace('https://smartyoutubetv.github.io/'); 
 	return null;
 	}}/>
        <Route path='/ios' component={() => { 
-	window.location.href = 'https://github.com/qnblackcat/uYouPlus'; 
+	window.location.replace('https://github.com/qnblackcat/uYouPlus'); 
 	return null;
 	}}/>
     <Route path='/brave' component={() => { 
         if (linkToUse) {
-		window.location.href = 'https://brave.com/cge651'; 
+		window.location.replace('https://brave.com/cge651'); 
         } else {
-		window.location.href = 'https://brave.com/raz074';
+		window.location.replace('https://brave.com/raz074');
 	}
 	return null;
     }}/>

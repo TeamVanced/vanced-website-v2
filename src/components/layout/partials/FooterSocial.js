@@ -6,6 +6,7 @@ import {
 	FaRedditSquare,
 	FaTwitterSquare,
 	FaTelegramPlane,
+	FaGithub
 } from "react-icons/fa";
 import { SiXdadevelopers } from "react-icons/si";
 
@@ -18,6 +19,11 @@ const FooterSocial = ({ className, ...props }) => {
 				<li>
 					<a href="https://discord.com/invite/xHERtjn">
 						<FaDiscord size="2em" />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/YTVanced">
+						<FaGithub size="2em" />
 					</a>
 				</li>
 				<li>
