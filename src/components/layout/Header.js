@@ -125,17 +125,17 @@ const Header = ({
 										<li title="Features">
 											<a href="/#features">Features</a>
 										</li>
-										<li title="Vanced PC" onClick={closeMenu}>
+										<li title="Vanced PC Experience" onClick={closeMenu}>
 											<Link to="/pc">
 												PC
 											</Link>
 										</li>
-										<li title="Vanced iOS" onClick={closeMenu}>
+										<li title="uYouPlus" onClick={closeMenu}>
 											<Link to="/ios">
 												iOS
 											</Link>
 										</li>
-										<li title="Vanced TV" onClick={closeMenu}>
+										<li title="SmartTubeNext" onClick={closeMenu}>
 											<Link to="/tv">
 												TV
 											</Link>
