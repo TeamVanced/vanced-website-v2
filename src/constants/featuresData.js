@@ -17,6 +17,7 @@ const featuresData = [
 		data: [
 			"Features the option of an amoled black theme to reduce eye and battery strain.",
 			"Blocks All videos ads and allows you to play videos in the background or in Picture in Picture (only on android 8.0 and up)",
+			"Your favourite channels can be whitelisted from both video ads and SponsorBlock if you wish",
 			"Swipe controls allow you to control brightness and volume like how it is in other video player apps such as VLC or MX Player (with configurable padding).",
 			"New auto repeat feature allowing you to enjoy videos like tiktoks/vines or simply continue playing a song on loop.",
 			"Not liking the new comments section or miniplayer? Those also can be toggled to the tablet versions which are very similar to the old version (albeit slightly buggy).",
@@ -52,7 +53,7 @@ const featuresData = [
 		data: [
 			"Reverses Google's removal of the dislike counter so you can finally see the quality of videos again",
 			<>
-				Uses the Return YouTube Dislike API found<a href="https://returnyoutubedislike.com/">here</a>. You can
+				Uses the Return YouTube Dislike API found <a href="https://returnyoutubedislike.com/">here</a>. You can
 				find more information on how it works
 			</>,
 			"It uses extension\\vanced userbase dislike submissions as a sample group to estimate total dislike counts on new videos, and archived data for old videos",
