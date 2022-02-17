@@ -48,12 +48,12 @@ const featuresData = [
 		],
 	},
 	{
-		name: "Return YouTube Dislike",
+		name: "Return YouTube™ Dislike",
 		images: [ryd1, ryd2],
 		data: [
 			"Reverses Google's removal of the dislike counter so you can finally see the quality of videos again",
 			<>
-				Uses the Return YouTube Dislike API found <a href="https://returnyoutubedislike.com/">here</a>. You can
+				Uses the Return YouTube™ Dislike API found <a href="https://returnyoutubedislike.com/">here</a>. You can
 				find more information on how it works
 			</>,
 			"It uses extension\\vanced userbase dislike submissions as a sample group to estimate total dislike counts on new videos, and archived data for old videos",
