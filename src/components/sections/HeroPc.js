@@ -103,6 +103,20 @@ const Hero = ({
 											width={64}
 										/>
 										</Button>
+										<Button
+											tag="a"
+											color="dark"
+											wideMobile
+											href="https://chrome.google.com/webstore/detail/return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi"
+											target="_blank"
+										>
+											3. Return YouTube Dislike
+											<Image
+											src={DownloadImg}
+											alt="Features tile icon 01"
+											width={64}
+										/>
+										</Button>
 									<Button
 										tag="a"
 										color="dark"
@@ -110,7 +124,7 @@ const Hero = ({
 										href="https://chrome.google.com/webstore/detail/enhancer-for-YouTube™/ponfpcnoihfmfllpaingbgckeeldkhle"
 										target="_blank"
 									>
-										3. Enhancer for YouTube™
+										4. Enhancer for YouTube™
 										<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"

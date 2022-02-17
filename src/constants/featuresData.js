@@ -7,6 +7,8 @@ import customization1 from "../assets/images/vanced_features/customization_1.web
 import customization2 from "../assets/images/vanced_features/customization_2.webp";
 import sponsorBlock1 from "../assets/images/vanced_features/sponsor_block_1.webp";
 import sponsorBlock2 from "../assets/images/vanced_features/sponsor_block_2.webp";
+import ryd1 from "../assets/images/vanced_features/ryd_1.webp";
+import ryd2 from "../assets/images/vanced_features/ryd_2.webp";
 
 const featuresData = [
 	{
@@ -42,6 +44,18 @@ const featuresData = [
 			"Also allows you to submit your own segments to the API and contribute to the wider community",
 			"Complete control over whether to automatically skip a segment category or show a button for skipping, or simply just not skipping it at all.",
 			"Highlights the segment in the specific colour based on its category in the playback timeline.",
+		],
+	},
+	{
+		name: "Return YouTube Dislike",
+		images: [ryd1, ryd2],
+		data: [
+			"Reverses Google's removal of the dislike counter so you can finally see the quality of videos again",
+			<>
+				Uses the Return YouTube Dislike API found<a href="https://returnyoutubedislike.com/">here</a>. You can
+				find more information on how it works
+			</>,
+			"It uses extension\\vanced userbase dislike submissions as a sample group to estimate total dislike counts on new videos, and archived data for old videos",
 		],
 	},
 ];
