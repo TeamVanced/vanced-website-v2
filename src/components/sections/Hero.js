@@ -8,7 +8,7 @@ import Button from "../elements/Button";
 import getRandomQuotes from "../../utils/getRandomQuotes";
 import Image from "../elements/Image";
 import DownloadImg from "./../../assets/images/download.svg";
-import { ChangeLogContext, ShowBraveContext } from "../../App";
+import { ManagerContext, ShowBraveContext } from "../../App";
 
 import { SiBrave, SiAdguard } from "react-icons/si";
 import { ADGUARD, BRAVE } from "../../constants/links";
@@ -58,7 +58,7 @@ const Hero = ({
 		bottomDivider && "has-bottom-divider",
 	);
 
-	const vancedManager = useContext(ChangeLogContext)?.manager;
+	const vancedManager = useContext(ManagerContext);
 	const showBrave = useContext(ShowBraveContext);
 
 	return (
@@ -85,9 +85,9 @@ const Hero = ({
 										tag="a"
 										color="primary"
 										wideMobile
-										href={vancedManager?.url}
+										href="https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk"
 									>
-										Vanced Manager (v{vancedManager?.version})
+										Vanced Manager ({vancedManager?.tag_name?.split('-')[0]})
 										<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"

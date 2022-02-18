@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 
-import { ChangeLogContext } from "../../App";
+import { ManagerContext } from "../../App";
 
 const propTypes = {
 	...SectionProps.types,
@@ -37,13 +37,35 @@ const ChangeLogs = ({
 		bottomDivider && "has-bottom-divider",
 	);
 
-	const changeLogs = useContext(ChangeLogContext);
+	const [vancedData, setVanced] = useState({});
+	const [musicData, setMusic] = useState({});
+	const [microgData, setMicrog] = useState({});
+
+	useEffect(() => {
+		fetch("https://api.github.com/repos/YTVanced/Vanced/releases/latest")
+			.then(res => res.json())
+			.then(data => setVanced(data));
+	}, []);
+
+	useEffect(() => {
+		fetch("https://api.github.com/repos/YTVanced/VancedMusic/releases/latest")
+			.then(res => res.json())
+			.then(data => setMusic(data));
+	}, []);
+
+	useEffect(() => {
+		fetch("https://api.github.com/repos/YTVanced/VancedMicroG/releases/latest")
+			.then(res => res.json())
+			.then(data => setMicrog(data));
+	}, []);
+
+	const managerData = useContext(ManagerContext);
 
 	const changeLogsLoopData = [
-		{ name: "Vanced Manager", data: changeLogs?.manager },
-		{ name: "MicroG", data: changeLogs?.microg },
-		{ name: "YouTube™ Music Vanced", data: changeLogs?.music },
-		{ name: "YouTube™ Vanced", data: changeLogs?.vanced },
+		{ name: "Vanced Manager", data: managerData },
+		{ name: "MicroG", data: microgData },
+		{ name: "YouTube™ Music Vanced", data: musicData },
+		{ name: "YouTube™ Vanced", data: vancedData },
 	];
 
 	return (
@@ -68,21 +90,22 @@ const ChangeLogs = ({
 						<React.Fragment key={data.name}>
 							<h3>
 								{data.name}{" "}
-								<a href={data?.data?.url}>
+								<a href={data?.data?.html_url}>
 									<span
 										className="m-0 mb-32 reveal-from-bottom text-sm text-color-secondary"
 										data-reveal-delay="400"
 									>
-										(v{data?.data?.version})
+										({data?.data?.tag_name?.split('-')[0]})
 									</span>
 								</a>
 							</h3>
 							<p>Changelog:</p>
 							<ul>
-								{data?.data?.changelog.split("- ").map(point => {
+								{data?.data?.body?.split("- ").map(point => {
 									if (point) {
 										return <li key={point}>{point}</li>;
 									}
+									return point;
 								})}
 							</ul>
 							<hr />

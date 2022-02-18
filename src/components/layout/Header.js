@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
-import { ChangeLogContext } from "../../App";
-import { Link as LinkScroll } from "react-scroll";
+import { ManagerContext } from "../../App";
 
 const propTypes = {
 	navPosition: PropTypes.string,
@@ -80,9 +79,7 @@ const Header = ({
 		className,
 	);
 
-	const ytVanced = useContext(ChangeLogContext)?.vanced;
-	const musicVanced = useContext(ChangeLogContext)?.music;
-	const vancedManagerAPKUrl = useContext(ChangeLogContext)?.manager?.url;
+	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 
 	return (
 		<header {...props} className={classes}>
