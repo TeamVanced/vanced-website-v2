@@ -79,7 +79,7 @@ const Header = ({
 		className,
 	);
 
-	const vancedManagerAPKUrl = useContext(ManagerContext)?.assets[0]?.browser_download_url;
+	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 
 	return (
 		<header {...props} className={classes}>

@@ -85,9 +85,9 @@ const Hero = ({
 										tag="a"
 										color="primary"
 										wideMobile
-										href={vancedManager?.assets[0]?.browser_download_url}
+										href="https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk"
 									>
-										Vanced Manager ({vancedManager?.tag_name.split('-')[0]})
+										Vanced Manager ({vancedManager?.tag_name?.split('-')[0]})
 										<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"

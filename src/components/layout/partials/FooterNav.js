@@ -8,7 +8,7 @@ import { ADGUARD, BRAVE } from "../../../constants/links";
 const FooterNav = ({ className, ...props }) => {
 	const classes = classNames("footer-nav", className);
 
-	const vancedManagerAPKUrl = useContext(ManagerContext)?.assets[0]?.browser_download_url;
+	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 	const showBrave = useContext(ShowBraveContext);
 
 	return (

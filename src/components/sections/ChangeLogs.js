@@ -63,9 +63,9 @@ const ChangeLogs = ({
 
 	const changeLogsLoopData = [
 		{ name: "Vanced Manager", data: managerData },
-		{ name: "MicroG", data: vancedData },
+		{ name: "MicroG", data: microgData },
 		{ name: "YouTube™ Music Vanced", data: musicData },
-		{ name: "YouTube™ Vanced", data: microgData },
+		{ name: "YouTube™ Vanced", data: vancedData },
 	];
 
 	return (
@@ -95,16 +95,17 @@ const ChangeLogs = ({
 										className="m-0 mb-32 reveal-from-bottom text-sm text-color-secondary"
 										data-reveal-delay="400"
 									>
-										(v{data?.data?.tag_name.split('-')[0]})
+										({data?.data?.tag_name?.split('-')[0]})
 									</span>
 								</a>
 							</h3>
 							<p>Changelog:</p>
 							<ul>
-								{data?.data?.body.split("- ").map(point => {
+								{data?.data?.body?.split("- ").map(point => {
 									if (point) {
 										return <li key={point}>{point}</li>;
 									}
+									return point;
 								})}
 							</ul>
 							<hr />
