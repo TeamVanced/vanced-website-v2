@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { ChangeLogContext, ShowBraveContext } from "../../../App";
+import { ManagerContext, ShowBraveContext } from "../../../App";
 import { SiBrave, SiAdguard } from "react-icons/si";
 import { ADGUARD, BRAVE } from "../../../constants/links";
 
 const FooterNav = ({ className, ...props }) => {
 	const classes = classNames("footer-nav", className);
 
-	const vancedManagerAPKUrl = useContext(ChangeLogContext)?.manager?.url;
+	const vancedManagerAPKUrl = useContext(ManagerContext)?.assets[0]?.browser_download_url;
 	const showBrave = useContext(ShowBraveContext);
 
 	return (
