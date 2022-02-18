@@ -24,7 +24,7 @@ const tagManagerArgs = {
 	gtmId: "GTM-MXQ4LWV",
 };
 
-export const ChangeLogContext = createContext();
+export const ManagerContext = createContext();
 export const ShowBraveContext = createContext();
 
 // Change this to show BRAVE across website
@@ -42,17 +42,17 @@ const App = () => {
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [location]);
 
-	const [changeLogs, setChangeLogs] = useState({});
+	const [managerData, setManager] = useState({});
 
 	useEffect(() => {
-		fetch(process.env.REACT_APP_VANCED_LATEST_API_URL)
+		fetch("https://api.github.com/repos/YTVanced/VancedManager/releases/latest")
 			.then(res => res.json())
-			.then(data => setChangeLogs(data));
+			.then(data => setManager(data));
 	}, []);
 
 	return (
 		<ShowBraveContext.Provider value={showBrave}>
-			<ChangeLogContext.Provider value={changeLogs}>
+			<ManagerContext.Provider value={managerData}>
 				<ScrollReveal
 					ref={childRef}
 					children={() => (
@@ -84,7 +84,7 @@ const App = () => {
 						</Switch>
 					)}
 				/>
-			</ChangeLogContext.Provider>
+			</ManagerContext.Provider>
 		</ShowBraveContext.Provider>
 	);
 };

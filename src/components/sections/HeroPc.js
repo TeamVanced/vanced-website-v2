@@ -8,7 +8,6 @@ import Button from "../elements/Button";
 import getRandomQuotes from "../../utils/getRandomQuotes";
 import Image from "../elements/Image";
 import DownloadImg from "./../../assets/images/download.svg";
-import { ChangeLogContext, ShowBraveContext } from "../../App";
 
 import { SiBrave, SiAdguard } from "react-icons/si";
 import { ADGUARD, BRAVE } from "../../constants/links";
@@ -57,9 +56,6 @@ const Hero = ({
 		topDivider && "has-top-divider",
 		bottomDivider && "has-bottom-divider",
 	);
-
-	const vancedManager = useContext(ChangeLogContext)?.manager;
-	const showBrave = useContext(ShowBraveContext);
 
 	return (
 		<section {...props} className={outerClasses}>
