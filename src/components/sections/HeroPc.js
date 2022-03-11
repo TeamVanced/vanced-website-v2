@@ -106,7 +106,7 @@ const Hero = ({
 											href="https://chrome.google.com/webstore/detail/return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi"
 											target="_blank"
 										>
-											3. Return YouTube™ Dislike
+											3. RYD
 											<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"
@@ -120,7 +120,7 @@ const Hero = ({
 										href="https://chrome.google.com/webstore/detail/enhancer-for-YouTube™/ponfpcnoihfmfllpaingbgckeeldkhle"
 										target="_blank"
 									>
-										4. Enhancer for YouTube™
+										4. Enhancer
 										<Image
 											src={DownloadImg}
 											alt="Features tile icon 01"
