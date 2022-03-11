@@ -6,7 +6,7 @@ import { SectionTilesProps } from "../../utils/SectionProps";
 
 import { ShowBraveContext } from "../../App";
 
-import { FaYoutube, FaMusic } from "react-icons/fa";
+import { FaPlayCircle, FaMusic } from "react-icons/fa";
 import { SiBrave, SiAdguard } from "react-icons/si";
 import { ADGUARD, BRAVE } from "../../constants/links";
 
@@ -82,15 +82,15 @@ const FeaturesTiles = ({
 											height={64}
 										/> */}
 
-										<FaYoutube size="2em" color="white" />
+										<FaPlayCircle size="2em" color="white" />
 									</div>
 								</div>
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Install Vanced</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										YouTube™ Vanced is the stock Android YouTube™ app, but better!
+										Vanced provides a better YT experience out of the box!
 										Includes adblocking, true amoled dark mode and a lot more.
-										Use the handy Vanced Manager to install YouTube™ Vanced with
+										Use the handy Vanced Manager to install Vanced with
 										ease.
 									</p>
 								</div>
@@ -122,10 +122,10 @@ const FeaturesTiles = ({
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Music</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced, but for YouTube™ Music! This is relatively less
+										Vanced, but for YT Music! This is relatively less
 										feature rich compared to vanced but still features many
 										things you come to expect like adblocking and background
-										playback all inside YouTube™ Music!
+										playback all inside Vanced Music!
 									</p>
 								</div>
 							</div>
