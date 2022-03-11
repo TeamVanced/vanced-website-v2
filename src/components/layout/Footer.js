@@ -38,7 +38,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
 					<div className="footer-bottom space-between text-xxs invert-order-desktop">
 						<FooterNav />
 						<div className="footer-copyright">
-							YouTube is onwed by Google LLC.<br />Vanced is not affiliated in any way with Google/YouTube
+							YouTube is owned by Google LLC.<br />Vanced is not affiliated in any way with Google/YouTube
 						</div>
 					</div>
 				</div>
