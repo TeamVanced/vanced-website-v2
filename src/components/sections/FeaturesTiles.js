@@ -6,7 +6,7 @@ import { SectionTilesProps } from "../../utils/SectionProps";
 
 import { ShowBraveContext } from "../../App";
 
-import { FaPlay, FaMusic } from "react-icons/fa";
+import { FaPlayCircle, FaMusic } from "react-icons/fa";
 import { SiBrave, SiAdguard } from "react-icons/si";
 import { ADGUARD, BRAVE } from "../../constants/links";
 
@@ -82,7 +82,7 @@ const FeaturesTiles = ({
 											height={64}
 										/> */}
 
-										<FaPlay size="2em" color="white" />
+										<FaPlayCircle size="2em" color="white" />
 									</div>
 								</div>
 								<div className="features-tiles-item-content">
