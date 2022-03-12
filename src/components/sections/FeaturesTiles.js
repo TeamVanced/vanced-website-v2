@@ -86,12 +86,11 @@ const FeaturesTiles = ({
 									</div>
 								</div>
 								<div className="features-tiles-item-content">
-									<h4 className="mt-0 mb-8">Install Vanced</h4>
+									<h4 className="mt-0 mb-8">Vanced</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced provides a better YT experience out of the box!
+										Vanced provides a better video watching experience out of the box!
 										Includes adblocking, true amoled dark mode and a lot more.
-										Use the handy Vanced Manager to install Vanced with
-										ease.
+										SHA-256 Signature: 8b1dfe07 a73975ea 96419255 5492e1fe 1c8cf4f3 49006386 5ebe3f6b dfbe597d
 									</p>
 								</div>
 							</div>
@@ -122,7 +121,7 @@ const FeaturesTiles = ({
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Music</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced, but for YT Music! This is relatively less
+										Vanced, but for Music! This is relatively less
 										feature rich compared to vanced but still features many
 										things you come to expect like adblocking and background
 										playback all inside Vanced Music!
