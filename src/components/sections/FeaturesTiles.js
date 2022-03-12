@@ -90,7 +90,7 @@ const FeaturesTiles = ({
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
 										Vanced provides a better video watching experience out of the box!
 										Includes adblocking, true amoled dark mode and a lot more.
-										SHA-256 Signature: 8b1dfe07a73975ea964192555492e1fe1c8cf4f3490063865ebe3f6bdfbe597d
+										SHA-256 Signature: 8b1dfe07 a73975ea 96419255 5492e1fe 1c8cf4f3 49006386 5ebe3f6b dfbe597d
 									</p>
 								</div>
 							</div>
