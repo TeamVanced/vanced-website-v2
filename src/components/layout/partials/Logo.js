@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
-import LogoImg from "./../../../assets/images/logo.svg";
+import LogoImg from "./../../../assets/images/logo.png";
 
 const Logo = ({
   className,
