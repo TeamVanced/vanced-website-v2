@@ -79,7 +79,6 @@ const Header = ({
 		className,
 	);
 
-	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 
 	return (
 		<header {...props} className={classes}>
@@ -136,17 +135,6 @@ const Header = ({
 											<Link to="/tv">
 												TV
 											</Link>
-										</li>
-									</ul>
-									<ul className="list-reset header-nav-right">
-										<li>
-											<a
-												href={vancedManagerAPKUrl}
-												className="button button-primary button-wide-mobile button-sm"
-												onClick={closeMenu}
-											>
-												Download
-											</a>
 										</li>
 									</ul>
 									{/* {!hideSignin &&

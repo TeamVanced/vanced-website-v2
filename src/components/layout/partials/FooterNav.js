@@ -8,7 +8,6 @@ import { ADGUARD, BRAVE } from "../../../constants/links";
 const FooterNav = ({ className, ...props }) => {
 	const classes = classNames("footer-nav", className);
 
-	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 	const showBrave = useContext(ShowBraveContext);
 
 	return (
@@ -16,9 +15,6 @@ const FooterNav = ({ className, ...props }) => {
 			<ul className="list-reset">
 				<li>
 					<Link to="/changelogs">Changelog</Link>
-				</li>
-				<li>
-					<a href={vancedManagerAPKUrl}>Download</a>
 				</li>
 				{showBrave && (
 					<li>
