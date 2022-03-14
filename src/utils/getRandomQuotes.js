@@ -6,6 +6,7 @@ const quotesArray = [
 	"Just read the instructions!",
 	"Download Brave to support us",
 	"Download Adguard to support us",
+	"Vanced is no longer available",
 	"Vanced doesn't include video downloading",
 ];
 

@@ -88,43 +88,7 @@ const FeaturesTiles = ({
 								<div className="features-tiles-item-content">
 									<h4 className="mt-0 mb-8">Vanced</h4>
 									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced provides a better video watching experience out of the box!
-										Includes adblocking, true amoled dark mode and a lot more.
-										SHA-256 Signature: 8b1dfe07 a73975ea 96419255 5492e1fe 1c8cf4f3 49006386 5ebe3f6b dfbe597d
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div
-							className="tiles-item reveal-from-bottom"
-							data-reveal-delay="900"
-						>
-							<div className="tiles-item-inner">
-								<div className="features-tiles-item-header">
-									<div
-										className="features-tiles-item-image mb-16"
-										style={{
-											height: "64px",
-											width: "64px",
-										}}
-									>
-										{/* <Image
-											src={require("./../../assets/images/feature-tile-icon-02.svg")}
-											alt="Features tile icon 02"
-											width={64}
-											height={64}
-										/> */}
-										<FaMusic size="2em" color="white" />
-									</div>
-								</div>
-								<div className="features-tiles-item-content">
-									<h4 className="mt-0 mb-8">Music</h4>
-									<p className="m-0 text-sm" style={{ textAlign: "justify" }}>
-										Vanced, but for Music! This is relatively less
-										feature rich compared to vanced but still features many
-										things you come to expect like adblocking and background
-										playback all inside Vanced Music!
+										Official Vanced SHA-256 Signature: 8b1dfe07 a73975ea 96419255 5492e1fe 1c8cf4f3 49006386 5ebe3f6b dfbe597d
 									</p>
 								</div>
 							</div>

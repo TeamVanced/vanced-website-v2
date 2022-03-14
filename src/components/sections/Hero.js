@@ -85,14 +85,8 @@ const Hero = ({
 										tag="a"
 										color="primary"
 										wideMobile
-										href="https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk"
 									>
-										Vanced Manager ({vancedManager?.tag_name?.split('-')[0]})
-										<Image
-											src={DownloadImg}
-											alt="Features tile icon 01"
-											width={64}
-										/>
+										Vanced no Longer Available, instead:
 									</Button>
 									{showBrave && (
 										<Button
@@ -102,7 +96,7 @@ const Hero = ({
 											href={BRAVE}
 											target="_blank"
 										>
-											Support us <SiBrave size="2em" color="white" />
+											Use Brave (referral)<SiBrave size="2em" color="white" />
 										</Button>
 									)}
 									<Button
@@ -112,7 +106,7 @@ const Hero = ({
 										href={ADGUARD}
 										target="_blank"
 									>
-										Support us <SiAdguard size="2em" color="white" />
+										Use Adguard (referral)<SiAdguard size="2em" color="white" />
 									</Button>
 								</ButtonGroup>
 							</div>

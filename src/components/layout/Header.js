@@ -79,7 +79,6 @@ const Header = ({
 		className,
 	);
 
-	const vancedManagerAPKUrl = "https://github.com/YTVanced/VancedManager/releases/latest/download/manager.apk";
 
 	return (
 		<header {...props} className={classes}>
@@ -114,39 +113,10 @@ const Header = ({
 											navPosition && `header-nav-${navPosition}`,
 										)}
 									>
-										<li title="Changelogs" onClick={closeMenu}>
-											<Link to="/changelogs">
-												Changelogs
-											</Link>
-										</li>
-										<li title="Features">
-											<a href="/#features">Features</a>
-										</li>
 										<li title="Vanced PC Experience" onClick={closeMenu}>
 											<Link to="/pc">
 												PC
 											</Link>
-										</li>
-										<li title="uYouPlus" onClick={closeMenu}>
-											<Link to="/ios">
-												iOS
-											</Link>
-										</li>
-										<li title="SmartTubeNext" onClick={closeMenu}>
-											<Link to="/tv">
-												TV
-											</Link>
-										</li>
-									</ul>
-									<ul className="list-reset header-nav-right">
-										<li>
-											<a
-												href={vancedManagerAPKUrl}
-												className="button button-primary button-wide-mobile button-sm"
-												onClick={closeMenu}
-											>
-												Download
-											</a>
 										</li>
 									</ul>
 									{/* {!hideSignin &&
