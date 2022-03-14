@@ -86,7 +86,7 @@ const Hero = ({
 										color="primary"
 										wideMobile
 									>
-										Vanced no Longer Available
+										Vanced no Longer Available, instead:
 									</Button>
 									{showBrave && (
 										<Button
@@ -96,7 +96,7 @@ const Hero = ({
 											href={BRAVE}
 											target="_blank"
 										>
-											Support us <SiBrave size="2em" color="white" />
+											Use Brave <SiBrave size="2em" color="white" />
 										</Button>
 									)}
 									<Button
@@ -106,7 +106,7 @@ const Hero = ({
 										href={ADGUARD}
 										target="_blank"
 									>
-										Support us <SiAdguard size="2em" color="white" />
+										Use Adguard <SiAdguard size="2em" color="white" />
 									</Button>
 								</ButtonGroup>
 							</div>

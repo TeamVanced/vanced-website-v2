@@ -113,27 +113,9 @@ const Header = ({
 											navPosition && `header-nav-${navPosition}`,
 										)}
 									>
-										<li title="Changelogs" onClick={closeMenu}>
-											<Link to="/changelogs">
-												Changelogs
-											</Link>
-										</li>
-										<li title="Features">
-											<a href="/#features">Features</a>
-										</li>
 										<li title="Vanced PC Experience" onClick={closeMenu}>
 											<Link to="/pc">
 												PC
-											</Link>
-										</li>
-										<li title="uYouPlus" onClick={closeMenu}>
-											<Link to="/ios">
-												iOS
-											</Link>
-										</li>
-										<li title="SmartTubeNext" onClick={closeMenu}>
-											<Link to="/tv">
-												TV
 											</Link>
 										</li>
 									</ul>

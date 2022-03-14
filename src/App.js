@@ -44,11 +44,6 @@ const App = () => {
 
 	const [managerData, setManager] = useState({});
 
-	useEffect(() => {
-		fetch("https://api.github.com/repos/YTVanced/VancedManager/releases/latest")
-			.then(res => res.json())
-			.then(data => setManager(data));
-	}, []);
 
 	return (
 		<ShowBraveContext.Provider value={showBrave}>
@@ -65,20 +60,8 @@ const App = () => {
 							/>
 							<AppRoute
 								exact
-								path="/changelogs"
-								component={ChangeLog}
-								layout={LayoutDefault}
-							/>
-							<AppRoute
-								exact
 								path="/pc"
 								component={PC}
-								layout={LayoutDefault}
-							/>
-							<AppRoute
-								exact
-								path="/features"
-								component={Features}
 								layout={LayoutDefault}
 							/>
 						</Switch>
