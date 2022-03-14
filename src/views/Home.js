@@ -10,6 +10,7 @@ const Home = () => {
 	return (
 		<Suspense fallback={<div>Loading..</div>}>
 			<Hero className="illustration-section-01" />
+			<FeaturesTiles />
 			{/* <Testimonial topDivider /> */}
 			{/* <Cta split /> */}
 		</Suspense>
