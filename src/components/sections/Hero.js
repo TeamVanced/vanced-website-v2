@@ -96,7 +96,7 @@ const Hero = ({
 											href={BRAVE}
 											target="_blank"
 										>
-											Use Brave <SiBrave size="2em" color="white" />
+											Use Brave (referral)<SiBrave size="2em" color="white" />
 										</Button>
 									)}
 									<Button
@@ -106,7 +106,7 @@ const Hero = ({
 										href={ADGUARD}
 										target="_blank"
 									>
-										Use Adguard <SiAdguard size="2em" color="white" />
+										Use Adguard (referral)<SiAdguard size="2em" color="white" />
 									</Button>
 								</ButtonGroup>
 							</div>
