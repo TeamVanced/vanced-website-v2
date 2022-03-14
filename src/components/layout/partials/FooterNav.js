@@ -13,9 +13,6 @@ const FooterNav = ({ className, ...props }) => {
 	return (
 		<nav {...props} className={classes}>
 			<ul className="list-reset">
-				<li>
-					<Link to="/changelogs">Changelog</Link>
-				</li>
 				{showBrave && (
 					<li>
 						<a href={BRAVE} target="_blank" rel="noopener noreferrer">
