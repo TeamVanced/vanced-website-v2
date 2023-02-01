@@ -28,7 +28,7 @@ export const ManagerContext = createContext();
 export const ShowBraveContext = createContext();
 
 // Change this to show BRAVE across website
-export const showBrave = true;
+export const showBrave = false;
 
 const App = () => {
 	const childRef = useRef();
